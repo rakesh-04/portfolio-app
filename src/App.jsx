@@ -1,4 +1,7 @@
 import React from 'react';
+import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./index.css";
 import { Navbar } from './components/Navbar';
 import Header from './components/Header';
 import { Dashboard } from './components/Dashboard';
@@ -20,5 +23,12 @@ const App = () => {
   </div>
 );
 }
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <Router>
+    <App />
+  </Router>
+);
 
 export default App;
