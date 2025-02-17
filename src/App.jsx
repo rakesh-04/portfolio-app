@@ -23,12 +23,4 @@ const App = () => {
   </div>
 );
 }
-
-const root = createRoot(document.getElementById("root"));
-root.render(
-  <Router>
-    <App />
-  </Router>
-);
-
 export default App;
