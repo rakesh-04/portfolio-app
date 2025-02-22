@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { HashLink } from 'react-router-hash-link';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,14 +22,14 @@ export const Navbar = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20"> {/* Increased height */}
           {/* Logo */}
-          <div className="text-3xl font-bold text-gray-900">Portfolio</div> {/* Increased font size */}
+          <div className="text-4xl font-bold text-gray-900">Portfolio</div> {/* Increased font size */}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-gray-900 text-2xl">Home</a> {/* Increased font size */}
-            <a href="#" className="text-gray-700 hover:text-gray-900 text-2xl">About</a> {/* Increased font size */}
-            <a href="#" className="text-gray-700 hover:text-gray-900 text-2xl">Projects</a> {/* Increased font size */}
-            <a href="#" className="text-gray-700 hover:text-gray-900 text-2xl">Contact</a> {/* Increased font size */}
+            <HashLink to="/#home" className="text-gray-700 hover:text-gray-900 text-2xl">Home</HashLink> {/* Increased font size */}
+            <HashLink to="/#Ht" className="text-gray-700 hover:text-gray-900 text-2xl">About</HashLink> {/* Increased font size */}
+            <HashLink to="/projects" className="text-gray-700 hover:text-gray-900 text-2xl">Projects</HashLink> {/* Increased font size */}
+            <HashLink to="/#contact" className="text-gray-700 hover:text-gray-900 text-2xl">Contact</HashLink> {/* Increased font size */}
           </div>
 
           {/* Mobile menu button */}
@@ -46,10 +47,10 @@ export const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 bg-white">
             <div className="flex flex-col space-y-4">
-              <a href="#" className="text-gray-700 hover:text-gray-900 text-lg">Home</a> {/* Increased font size */}
-              <a href="#" className="text-gray-700 hover:text-gray-900 text-lg">About</a> {/* Increased font size */}
-              <a href="#" className="text-gray-700 hover:text-gray-900 text-lg">Projects</a> {/* Increased font size */}
-              <a href="#" className="text-gray-700 hover:text-gray-900 text-lg">Contact</a> {/* Increased font size */}
+              <HashLink to="/#home" className="text-gray-700 hover:text-gray-900 text-2xl">Home</HashLink> {/* Increased font size */}
+              <HashLink to="/#Ht" className="text-gray-700 hover:text-gray-900 text-2xl">About</HashLink> {/* Increased font size */}
+              <HashLink to="/projects" className="text-gray-700 hover:text-gray-900 text-2xl">Projects</HashLink> {/* Increased font size */}
+              <HashLink to="/#contact" className="text-gray-700 hover:text-gray-900 text-2xl">Contact</HashLink> {/* Increased font size */}
             </div>
           </div>
         )}

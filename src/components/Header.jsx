@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Instagram, Mail, Link } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 const GemShape = () => (
   <motion.div
@@ -82,7 +82,7 @@ const Portfolio = () => {
   const textRef = useRef(null); // Define the textRef using useRef
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center relative">
+    <div id="home" className="min-h-screen bg-white flex flex-col items-center justify-center relative">
       {/* Main content container */}
       <div className="relative flex flex-col items-center">
         {/* Gemstone with container for perspective */}

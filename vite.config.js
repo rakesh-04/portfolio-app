@@ -12,5 +12,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  base: './', // Add this line to ensure relative paths
+  base: '/your-repo-name/', // Replace with your repository name
 });
