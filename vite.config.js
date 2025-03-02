@@ -12,5 +12,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  base: '/your-repo-name/', // Replace with your repository name
+  base: '/', // Set base to '/' for Netlify deployment
 });

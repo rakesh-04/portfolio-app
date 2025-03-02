@@ -2,10 +2,10 @@ import React from 'react';
 
 export const Skills = () => {
   const skills = {
-    languages: ['JavaScript', 'Python', 'HTML', 'CSS', 'SQL'],
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-    creative: ['Figma', 'Illustrator', 'Photoshop'],
-    devTools: ['Git', 'VSCode', 'Postman']
+    languages: ['JavaScript', 'Python', 'HTML', 'CSS', 'SQL','C'],
+    technologies: ['React', 'Node.js'],
+    creative: ['Photoshop'],
+    devTools: ['Git', 'VSCode']
   };
 
   return (
