@@ -6,7 +6,7 @@ export const ProjectsPage = () => {
       title: "Tic Tac Toe Game",
       description: "This is a simple Tic Tac Toe game built with HTML, CSS, and JavaScript.",
       tech: ["JavaScript", "CSS", "HTML"],
-      image: ticImage, // Update with the correct path to your image in the public directory
+      image: "/assets/unnamed.jpg", // Update with the correct path to your image in the public directory
       link: "https://rakesh-04.github.io/Tic-tae-toe/"
     },
     // Add more projects
